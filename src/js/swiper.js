@@ -1,9 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-  new Swiper(".mySwiper", {
-    // direction: 'vertical',
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.mySwiper', {
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
     },
     navigation: {
@@ -14,9 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: 3000,
       disableOnInteraction: false,
     },
-    scrollbar: {
-      el: '.swiper-scrollbar',
+  });
+
+  new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
     },
+    // effect: 'fade', 
+    allowTouchMove: false,
   });
 });
-

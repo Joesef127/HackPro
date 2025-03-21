@@ -1,5 +1,31 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+* {
+  font-family: 'Rajdhani', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  overflow: hidden;
+}
+
+/* .hero-slide {
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+} */
+
+.hero-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  z-index: 10;
+}
 
 .swiper-pagination-bullet {
   padding: 6px;
@@ -11,14 +37,6 @@
   color: #fff !important;
 }
 
-.font-primary {
-  font-family: 'Rajdhani', monospace;
-}
-
-.font-secondary {
-  font-family: 'Montserrat', monospace;
-}
-
 .stat-item {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -26,14 +44,21 @@
   width: 250px;
 }
 
-* {
-  font-family: 'Rajdhani', monospace;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.footer-icon-list {
+  display: flex;
+  gap: 10px;
+
+  li {
+    margin: 0 !important;
+  }
 }
+
+
 
 @media screen and (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: none !important;
+    opacity: 0.5;
+    transform: scale(0.5);
   }
 }
