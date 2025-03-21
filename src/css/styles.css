@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+.swiper-pagination-bullet {
+  padding: 6px;
+  background-color: #fff !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+
+.font-primary {
+  font-family: 'Rajdhani', monospace;
+}
+
+.font-secondary {
+  font-family: 'Montserrat', monospace;
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+* {
+  font-family: 'Rajdhani', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}

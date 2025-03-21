@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+9033195239
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hire a hacker and private investigator for cheating partners, spying, and legal proof." />
+  <meta name="keywords" content="hacker, private investigator, catch cheating partner, cyber investigation" />
+
+  <title>HackPro</title>
+  <link href="./css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- flowbite -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+  <!-- animate on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/4d3aedbd5d.js" crossorigin="anonymous"></script>
+
+  <!-- typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- countUp.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.umd.js"></script>
+
+
+
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.getItem('color-theme') === 'dark' ||
+      (!('color-theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-gray-800 font-primary">HackPro</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-2">
+        <li><a href="#home" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Home</a></li>
+        <li><a href="#services" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Services</a></li>
+        <li><a href="#testimonials" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Testimonials</a>
+        </li>
+        <li><a href="#faq" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">FAQ</a></li>
+        <li><a href="#contact" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <div class="flex gap-4">
+        <a href="#contact" class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg">
+          Contact Us
+        </a>
+
+        <button id="theme-toggle" type="button"
+          class="hidden md:block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 text-center py-6 bg-white shadow-lg">
+      <a href="#home" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Home</a>
+      <a href="#services" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Services</a>
+      <a href="#testimonials" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Testimonials</a>
+      <a href="#faq" class="py-2 px-3 hover:bg-blue-500 hover:text-white">FAQ</a>
+      <a href="#contact" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <section id="home" class="relative flex items-center justify-center min-h-screen text-white text-center">
+    <!-- <img src="./assets/images/view-desk.jpg" alt="" srcset=""> -->
+    <div class="absolute inset-0 bg-black bg-[url(./assets/images/view-desk.jpg)]"></div>
+    <div class="z-10 px-6">
+      <h1 class="font-bold text-4xl md:text-9xl">
+        <span id="typing-text"></span>
+      </h1>
+      <p class="mt-4 text-2xl md:text-3xl" data-aos="fade-right">We uncover the truth and provide undeniable evidence.
+      </p>
+      <a href="#contact" class="inline-block bg-blue-600 px-6 py-3 rounded-lg text-lg mt-8" data-aos="fade-up">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <section id="stats" class="py-16 bg-secondary text-black text-center">
+    <h2 class="text-4xl font-techy font-bold mb-8" data-aos="fade-up">Company Stats</h2>
+    <div class="flex flex-wrap justify-center gap-12" data-aos="fade-right">
+      <div class="stat-item text-4xl" data-aos="fade-up">
+        <span id="years" class="text-6xl font-bold text-blue-500">0</span>+
+        <p class="text-xl">Years in Service</p>
+      </div>
+      <div class="stat-item text-4xl" data-aos="fade-up">
+        <span id="clients" class="text-6xl font-bold text-blue-500">0</span>+
+        <p class="text-xl">Clients Served</p>
+      </div>
+      <div class="stat-item text-3xl" data-aos="fade-up">
+        <span id="success" class="text-6xl font-bold text-blue-500">0</span>%
+        <p class="text-xl">Success Rate</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Service 1 -->
+        <div class="p-6 shadow-md rounded-lg" data-aos="fade-up">
+          <i class="fas fa-user-secret text-5xl text-blue-600"></i>
+          <h3 class="text-2xl font-semibold my-4">Catch a Cheating Partner</h3>
+          <p>We use advanced techniques to help you confirm suspicions and gather proof.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="p-6  shadow-md rounded-lg" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-eye text-5xl text-blue-600"></i>
+          <h3 class="text-2xl font-semibold my-4">Spy on Family & Friends</h3>
+          <p>Get real-time insights into a person's activities discreetly.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="p-6  shadow-md rounded-lg" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-gavel text-5xl text-blue-600"></i>
+          <h3 class="text-2xl font-semibold my-4">Legal Evidence Gathering</h3>
+          <p>We provide legally admissible evidence for divorce, fraud, and other cases.</p>
+        </div>
+      </div>
+      <a href="#contact" class="mt-10 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg">
+        Get a Quote
+      </a>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 bg-gray-900 text-white relative">
+    <div class="container mx-auto px-6 text-center gap-3">
+      <h2 class="text-4xl font-bold mb-10" data-aos="fade-right">What Our Clients Say</h2>
+
+      <!-- Swiper Container -->
+      <div class="relative max-w-3xl mx-auto">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide p-6 rounded-lg shadow-lg">
+              <p class="text-lg italic">"I caught my cheating husband thanks to their services! Highly recommend!"</p>
+              <div class="mt-4">
+                <span class="font-bold">Sarah K.</span>
+                <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide p-6 rounded-lg shadow-lg">
+              <p class="text-lg italic">"Professional and discreet. Helped me win my court case!"</p>
+              <div class="mt-4">
+                <span class="font-bold">James D.</span>
+                <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide p-6 rounded-lg shadow-lg">
+              <p class="text-lg italic">"They provided undeniable proof. Totally worth it!"</p>
+              <div class="mt-4">
+                <span class="font-bold">Emily R.</span>
+                <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination absolute bottom-3"></div>
+  </section>
+
+
+  <section id="faq" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-right">Frequently Asked Questions</h2>
+      <!-- <div class="max-w-2xl mx-auto"> -->
+      <div id="accordion-color" data-accordion="collapse"
+        data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white" data-aos="fade-up">
+
+        <h2 id="accordion-color-heading-1">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+            <span>Is hiring a hacker or private investigator legal?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">Hiring a private investigator is legal in many cases,
+              depending on your region's laws. Ethical hacking and cybersecurity services are also legal when used for
+              legitimate purposes. We strictly adhere to the law and do not engage in illegal activities.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-2">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+            aria-controls="accordion-color-body-2">
+            <span>How do I know this service is legitimate?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">We have been in business for over 12 years, serving
+              thousands of clients with an 87% success rate. Our testimonials speak for themselves. We operate
+              discreetly and ensure full confidentiality.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-3">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+            aria-controls="accordion-color-body-3">
+            <span>How does the process work?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+          <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+
+            <ul class="ps-5 text-gray-900 list-disc dark:text-gray-400">
+              <li class="text-gray-900">Step 1: Contact us via WhatsApp or Text.</li>
+              <li class="text-gray-900">Step 2: Share details of your request.</li>
+              <li class="text-gray-900">Step 3: We assess the case and provide a quote.</li>
+              <li class="text-gray-900">Step 4: Once payment is confirmed, we begin our investigation.</li>
+              <li class="text-gray-900">Step 5: You receive the results securely.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-4">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+            aria-controls="accordion-color-body-4">
+            <span>How much do your services cost?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">Pricing depends on the complexity of your case. Contact us
+              for a free quote based on your specific needs.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-5">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+            aria-controls="accordion-color-body-5">
+            <span>How long does it take to get results?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">Most cases take between 48 hours to a few weeks, depending
+              on the level of investigation required.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-6">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-6" aria-expanded="false"
+            aria-controls="accordion-color-body-6">
+            <span>Will my identity be kept confidential?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">Yes. We operate with 100% confidentiality. Your information
+              will never be shared with third parties.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-7">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-900 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-7" aria-expanded="false"
+            aria-controls="accordion-color-body-7">
+            <span>Can I request proof of work before making full payment?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">We provide initial assessments and partial reports before
+              full payment to ensure transparency.</p>
+          </div>
+        </div>
+
+        <h2 id="accordion-color-heading-8">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right rounded-b-xl text-gray-900 border border-b-2 hover:border-b-0 focus:rounded-b-none active:rounded-b-none border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
+            data-accordion-target="#accordion-color-body-8" aria-expanded="false"
+            aria-controls="accordion-color-body-8">
+            <span>What if my case is unsuccessful?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5 5 1 1 5" />
+            </svg>
+          </button>
+        </h2>
+
+        <div id="accordion-color-body-8" class="hidden" aria-labelledby="accordion-color-heading-8">
+          <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-900 dark:text-gray-400">While we have a high success rate, no service is 100%
+              guaranteed. We will discuss possible outcomes before starting, and in rare cases of failure, alternative
+              solutions may be provided.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!-- <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+      <div class="max-w-2xl mx-auto">
+        <div class="space-y-4">
+          <div x-data="{ open: false }" class="border p-4 rounded-lg bg-white shadow-md">
+            <button @click="open = !open" class="flex justify-between w-full text-left font-semibold text-lg">
+              How does your investigation work?
+              <span x-text="open ? '-' : '+'"></span>
+            </button>
+            <p x-show="open" class="mt-2 text-gray-600">We use advanced tools and techniques to gather data discreetly,
+              ensuring privacy and accuracy.</p>
+          </div>
+
+          <div x-data="{ open: false }" class="border p-4 rounded-lg bg-white shadow-md">
+            <button @click="open = !open" class="flex justify-between w-full text-left font-semibold text-lg">
+              Is this legal?
+              <span x-text="open ? '-' : '+'"></span>
+            </button>
+            <p x-show="open" class="mt-2 text-gray-600">Our services are within legal boundaries. However, laws vary by
+              location, so check your local regulations.</p>
+          </div>
+
+          <div x-data="{ open: false }" class="border p-4 rounded-lg bg-white shadow-md">
+            <button @click="open = !open" class="flex justify-between w-full text-left font-semibold text-lg">
+              How long does an investigation take?
+              <span x-text="open ? '-' : '+'"></span>
+            </button>
+            <p x-show="open" class="mt-2 text-gray-600">It depends on the complexity of the case. Most investigations
+              take between 3 to 10 days.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-10" data-aos="fade-right">Get in Touch</h2>
+
+      <!-- Contact Links -->
+      <!-- <div class="flex justify-center space-x-6 text-2xl">
+        <a href="https://wa.me/1234567890" target="_blank" class="text-green-400">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="sms:+1234567890" class="text-blue-400">
+          <i class="fas fa-mobile-alt"></i> TextNow
+        </a>
+        <a href="mailto:contact@example.com" class="text-yellow-400">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div> -->
+
+      <!-- Contact Form -->
+      <div class="max-w-lg mx-auto mt-10 bg-gray-800 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4" data-aos="fade-left">Send us a message</h3>
+        <form id="contact-form" data-aos="fade-up">
+          <input type="text" placeholder="Your Name" class="w-full p-3 rounded mb-4 bg-gray-700 text-white" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 rounded mb-4 bg-gray-700 text-white" required>
+          <textarea placeholder="Your Message" class="w-full p-3 rounded mb-4 bg-gray-700 text-white"
+            required></textarea>
+          <button type="submit" class="bg-blue-600 px-6 py-3 rounded-lg text-white w-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Logo & Name -->
+      <div class="mb-4" data-aos="fade-right">
+        <h3 class="text-2xl font-bold">CyberShield Investigations</h3>
+        <p class="text-sm text-gray-400">Your trusted private investigation service.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <nav class="mb-6" data-aos="fade-up">
+        <ul class="flex justify-center space-x-6 text-gray-300">
+          <li><a href="#home" class="hover:text-white"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#services" class="hover:text-white"><i class="fas fa-briefcase"></i> Services</a></li>
+          <li><a href="#faq" class="hover:text-white"><i class="fas fa-question-circle"></i> FAQ</a></li>
+          <li><a href="#contact" class="hover:text-white"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Disclaimer -->
+      <p class="text-sm text-gray-400" data-aos="fade-up">
+        © 2025 CyberShield Investigations. All rights reserved. Services comply with applicable laws. Clients are
+        responsible for ensuring legal use.
+      </p>
+    </div>
+  </footer>
+
+  <button id="scrollToTop"
+    class="hidden fixed bottom-6 right-6 text-white bg-blue-500 py-3 px-4 rounded-full shadow-lg hover:-translate-y-6 animate-bounce pointer">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+
+
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/toggleTheme.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/countUp.js"></script>
+<!-- <script src="../path/to/flowbite/dist/flowbite.min.js"></script> -->
+
+</html>

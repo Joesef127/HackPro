@@ -1,0 +1,22 @@
+document.addEventListener("DOMContentLoaded", () => {
+  new Swiper(".mySwiper", {
+    // direction: 'vertical',
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+});
+
