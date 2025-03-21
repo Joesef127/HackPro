@@ -9,8 +9,8 @@
   <meta name="keywords" content="hacker, private investigator, catch cheating partner, cyber investigation" />
 
   <title>HackPro</title>
-  <!-- <link rel="stylesheet" href="./src/css/output.css"> -->
-  <!-- <link rel="stylesheet" href="./src/css/styles.css"> -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,10 +56,8 @@
   <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
 
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <!-- Logo -->
       <a href="#" class="text-2xl font-bold text-gray-800 font-primary">HackPro</a>
 
-      <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-2">
         <li><a href="#home" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Home</a></li>
         <li><a href="#services" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Services</a></li>
@@ -69,7 +67,6 @@
         <li><a href="#contact" class="py-2 px-3 rounded-lg hover:bg-blue-500 hover:text-white">Contact</a></li>
       </ul>
 
-      <!-- CTA Button -->
       <div class="flex gap-4">
         <a href="#contact" class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-lg">
           Contact Us
@@ -91,7 +88,6 @@
       </div>
 
 
-      <!-- Mobile Menu Button -->
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -99,7 +95,6 @@
       </button>
     </nav>
 
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 text-center py-6 bg-white shadow-lg">
       <a href="#home" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Home</a>
       <a href="#services" class="py-2 px-3 hover:bg-blue-500 hover:text-white">Services</a>
@@ -130,10 +125,8 @@
       </div>
     </div>
 
-    <!-- Overlay -->
     <div class="hero-overlay"></div>
 
-    <!-- Hero Content -->
     <div class="z-10 px-6 absolute">
       <h1 class="font-bold text-4xl md:text-9xl text-white">
         <span id="typing-text"></span>
@@ -148,7 +141,7 @@
   </section>
 
 
-  <section id="stats" class="py-16 bg-secondary text-black text-center">
+  <section id="stats" class="py-14 bg-secondary text-black text-center">
     <h2 class="text-4xl font-techy font-bold mb-8" data-aos="fade-up">Company Stats</h2>
     <div class="flex flex-wrap justify-center gap-12" data-aos="fade-right">
       <div class="stat-item text-4xl" data-aos="fade-up">
@@ -200,33 +193,30 @@
     <div class="container mx-auto px-6 text-center gap-3 h-full">
       <h2 class="text-4xl font-bold mb-10" data-aos="fade-right">What Our Clients Say</h2>
 
-      <!-- Swiper Container -->
       <div class="relative max-w-3xl mx-auto">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <!-- Testimonial 1 -->
+
             <div class="swiper-slide p-6 rounded-lg shadow-lg">
               <p class="text-lg italic">"I caught my cheating husband thanks to their services! Highly recommend!"</p>
-              <div class="mt-4 flex items-center gap-3">
-                <img src="https://images.pexels.com/photos/30736850/pexels-photo-30736850/free-photo-of-casual-portrait-of-a-man-in-berlin.jpeg" alt="Sarah K." class="w-12 h-12 rounded-full object-cover">
+              <div class="mt-4 flex justify-center items-center gap-3">
+                <img src="https://images.pexels.com/photos/30736850/pexels-photo-30736850/free-photo-of-casual-portrait-of-a-man-in-berlin.jpeg" alt="Sarah K." class="w-12 h-12 rounded-full object-cover border border-white">
                 <span class="font-bold text-base">Sarah K.</span>
               </div>
             </div>
 
-            <!-- Testimonial 2 -->
             <div class="swiper-slide p-6 rounded-lg shadow-lg">
               <p class="text-lg italic">"Professional and discreet. Helped me win my court case!"</p>
-              <div class="mt-4 flex items-center gap-3">
-                <img src="https://images.pexels.com/photos/30736850/pexels-photo-30736850/free-photo-of-casual-portrait-of-a-man-in-berlin.jpeg" alt="James D." class="w-12 h-12 rounded-full object-cover">
+              <div class="mt-4 flex justify-center items-center gap-3">
+                <img src="https://images.pexels.com/photos/30736850/pexels-photo-30736850/free-photo-of-casual-portrait-of-a-man-in-berlin.jpeg" alt="James D." class="w-12 h-12 rounded-full object-cover border border-white">
                 <span class="font-bold text-base">James D.</span>
               </div>
             </div>
 
-            <!-- Testimonial 3 -->
             <div class="swiper-slide p-6 rounded-lg shadow-lg">
               <p class="text-lg italic">"They provided undeniable proof. Totally worth it!"</p>
-              <div class="mt-4 flex items-center gap-3">
-                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt="Emily R." class=" rounded-full border border-white">
+              <div class="mt-4 w-full flex justify-center items-center gap-3">
+                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg" alt="Emily R." class="w-12 h-12 rounded-full object-cover border border-white">
                 <span class="font-bold text-base">Emily R.</span>
               </div>
             </div>
@@ -235,11 +225,9 @@
       </div>
 
 
-      <!-- Navigation Buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <!-- Pagination -->
       <div class="swiper-pagination absolute bottom-3"></div>
     </div>
   </section>
