@@ -45,7 +45,12 @@ section {
   }
 }
 
-
+.hero-slide {
+  > img {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .swiper-button-next,
@@ -54,10 +59,5 @@ section {
     transform: scale(0.5);
   }
 
-  .hero-slide {
-    > img {
-      height: 100vh;
-      object-fit: cover;
-    }
-  }
+  
 }
