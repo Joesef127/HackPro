@@ -45,12 +45,12 @@ section {
   }
 }
 
-.hero-slide {
+/* .hero-slide {
   > img {
     height: 100vh;
     object-fit: cover;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .swiper-button-next,
