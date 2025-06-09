@@ -26,7 +26,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 // typing effect
 document.addEventListener("DOMContentLoaded", () => {
   new Typed("#typing-text", {
-    strings: ["Hire a Hacker", "Catch a Cheating Partner", "Find the Truth"],
+    strings: ["Hire an Ethical Hacker", "Catch your Cheating Partner", "Find the Truth", "Get Evidence for Divorce", "Spy on your Partner"],
     typeSpeed: 80,
     backSpeed: 50,
     loop: true,
